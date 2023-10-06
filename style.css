@@ -2,40 +2,31 @@ body {
     font-family: 'Open Sans', sans-serif;  
     margin: 0;  
    }  
-   a {  
-    text-decoration: none;  
-    color: #000;  
-   }  
-   a:hover{  
-     color: rgb(179, 179, 179);  
-   }  
-   .site-header {   
-    border-bottom: 1px solid #ccc;  
-    padding: .5em 1em;  
-    display: flex;  
-    justify-content: space-between;  
-    background-color: transparent;
-   }  
-   .site-identity h1 {  
-    font-size: 1.5em;  
-    margin: .6em 0;  
-    display: inline-block;  
-   }  
-   .site-navigation ul,   
-   .site-navigation li {  
-    margin: 0;   
-    padding: 0;  
-   }  
-   .site-navigation li {  
-    display: inline-block;  
-    margin: 1.4em 1em 1em 1em;  
-   }   
-   
-   h1{
-    font-size: 100px;
+
+   .site-header{
+    background-color: white;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
    }
 
-   .bg-img{
+   ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+   }
+
+   li{
+    padding: 0px 10px;
+   }
+
+   a{
+    text-decoration: none;
+    color: black;
+   }
+
+   .bg-img  {
     /* background-color: #ffffff; */
     background-image: url("image/bg-img.jpg");
     background-repeat: no-repeat;
@@ -55,10 +46,11 @@ body {
    .grid-item, .flex-item{
     border: 1px solid #000;
     padding: 20px;
+    text-align: center;
    }
 
    .grid-item-data{
-    text-align: center;
+    /* text-align: center; */
    }
 
    .flex-container{
@@ -69,15 +61,12 @@ body {
    }
 
    .flex-item{
-    margin: 10px 0px;
+    margin: 10px 10px;
    }
 
    @media only screen and (max-width: 600px) {
     .grid-container{
-        display: grid;
         grid-template-columns: auto;
-        gap : 10px 20px;
-        margin: 60px 50px;
        }
 
        h1{
@@ -86,12 +75,12 @@ body {
     
    }
 
-   @media only screen and (min-width: 768px) {
+   /* @media only screen and (min-width: 768px) {
     .grid-container{
         display: grid;
         grid-template-columns: auto auto;
         gap : 10px 20px;
         margin: 60px 50px;
        }
-   } 
+   }  */
 
